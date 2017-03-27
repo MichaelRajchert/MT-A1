@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="au.edu.canberra.mt_a1.AddItem">
+
+    <TextView
+        android:text="Click Capture to take a photo of the business card with the Camera, all click Load to load an existing image from your camera library."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/TextView_Description"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:paddingTop="35dp"
+        android:paddingBottom="35dp" />
+
+    <Button
+        android:text="Load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Button_Load"
+        android:textSize="18dp"
+        android:minHeight="60dp"
+        android:layout_below="@+id/TextView_Description"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentEnd="true"
+        android:onClick="load"/>
+
+    <Button
+        android:text="Capture"
+        android:layout_height="wrap_content"
+        android:id="@+id/Button_Capture"
+        android:layout_width="wrap_content"
+        android:textSize="18dp"
+        android:minHeight="60dp"
+        android:layout_below="@+id/TextView_Description"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="capture"/>
+
+</RelativeLayout>
