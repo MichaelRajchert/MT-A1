@@ -30,6 +30,13 @@
             android:textAlignment="center"
             android:textStyle="normal|bold" />
 
+        <TextView
+            android:text="Select item to edit it, If there are none, press ADD to begin adding a new contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextView_localDbHelp"
+            android:textAlignment="center" />
+
         <ListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -3,13 +3,10 @@ package au.edu.canberra.mt_a1;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,11 +21,7 @@ public class LocalDatabase extends AppCompatActivity {
 
         listView = (ListView) findViewById(R.id.ListView_ListView);
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
-                this,
-                android.R.layout.simple_list_item_1,
-                listData
-        );
+        ArrayAdapter<String> arrayAdapter = new CustomAdapter(this, listData);
         listView.setAdapter(arrayAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
