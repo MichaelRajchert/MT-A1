@@ -129,7 +129,7 @@ public class ImageResult extends AppCompatActivity {
         EditText textEdit = (EditText) findViewById(R.id.EditText_ReportedText);
         textToPush = textEdit.getText().toString();
 
-        LocalDatabase.items.add(textToPush);
+        LocalDatabase.listData.add(textToPush);
 
         startActivity(new Intent(this, LocalDatabase.class));
     }
