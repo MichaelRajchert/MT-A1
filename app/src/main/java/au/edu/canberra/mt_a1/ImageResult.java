@@ -9,8 +9,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.microsoft.projectoxford.vision.VisionServiceClient;
@@ -93,7 +91,7 @@ public class ImageResult extends AppCompatActivity {
                         }
                         result += "\n";
                     }
-                    result += "\n\n";
+                    result += "\n";
                 }
 
                 mEditText.setText(result);
